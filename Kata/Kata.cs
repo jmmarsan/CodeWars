@@ -42,6 +42,26 @@ namespace Kata
             return array;
         }
 
+        public static string AlphabetPosition(string text)
+        {
+            List<char> alphabet = "abcdefghijklmnopqrstuvwxyz".ToList();
+            string word = string.Empty;
+            foreach (char let in text.ToLower().ToCharArray())
+            {
+                int index = alphabet.IndexOf(let) + 1;
+                if (index != 0)
+                {
+                    word = string.IsNullOrEmpty(word)?index.ToString():string.Concat(word, " ", index.ToString());
+                }
+            }
+            return word;
+        }
+
+        public static string AlphabetPositionBest(string text)
+        {
+            return string.Join(" ", text.ToLower().Where(char.IsLetter).Select(x => x - 'a' + 1));
+        }
+
         public static int[] SortArrayBest(int[] array)
         {
             Queue<int> odds = new Queue<int>(array.Where(e => e % 2 == 1).OrderBy(e => e));
