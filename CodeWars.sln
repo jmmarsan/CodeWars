@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata", "Kata\Kata.csproj", "{AE55A3D7-350A-44CC-BC69-CCA9C481B04B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Tests\Test.csproj", "{0F2F29C1-8553-4615-93E8-52C517FAF3E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE55A3D7-350A-44CC-BC69-CCA9C481B04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE55A3D7-350A-44CC-BC69-CCA9C481B04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE55A3D7-350A-44CC-BC69-CCA9C481B04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE55A3D7-350A-44CC-BC69-CCA9C481B04B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2F29C1-8553-4615-93E8-52C517FAF3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2F29C1-8553-4615-93E8-52C517FAF3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2F29C1-8553-4615-93E8-52C517FAF3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2F29C1-8553-4615-93E8-52C517FAF3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B55D73D8-5477-40A5-9C4A-010FA9428FBC}
+	EndGlobalSection
+EndGlobal
