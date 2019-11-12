@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Kata
 {
@@ -21,7 +19,6 @@ namespace Kata
                 return str[pos].ToString();
             }
         }
-
 
 
         public static int[] SortArray(int[] array)
@@ -83,5 +80,12 @@ namespace Kata
                     (numMinutes > 10 ? numMinutes.ToString() : string.Concat("0", numMinutes.ToString())) , ":" ,
                     (numSeconds > 10 ? numSeconds.ToString() : string.Concat("0", numSeconds.ToString())));
         }
+
+
+            public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
+            {
+                return YourPoints > (ClassPoints.Sum() / ClassPoints.Count());
+            }
+
     }
 }
