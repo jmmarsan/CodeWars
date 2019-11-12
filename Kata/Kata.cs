@@ -12,7 +12,7 @@ namespace Kata
             int pos = (str.Length / 2);
             if (str.Length % 2 == 0)
             {
-                return str[pos-1].ToString() + str[pos].ToString();
+                return str[pos - 1].ToString() + str[pos].ToString();
             }
             else
             {
@@ -28,7 +28,7 @@ namespace Kata
 
             List<int> odd = array.Where(i => i % 2 == 1).ToList();
             odd.Sort();
-            for (int i=0; i< array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 == 1)
                 {
@@ -48,7 +48,7 @@ namespace Kata
                 int index = alphabet.IndexOf(let) + 1;
                 if (index != 0)
                 {
-                    word = string.IsNullOrEmpty(word)?index.ToString():string.Concat(word, " ", index.ToString());
+                    word = string.IsNullOrEmpty(word) ? index.ToString() : string.Concat(word, " ", index.ToString());
                 }
             }
             return word;
@@ -68,24 +68,24 @@ namespace Kata
 
         public static string GetReadableTime(int seconds)
         {
-            int numHours = seconds>=3600?seconds / 3600:0;
+            int numHours = seconds >= 3600 ? seconds / 3600 : 0;
             seconds = seconds - (numHours * 3600);
 
-            int numMinutes = seconds>=60?seconds / 60:0;
+            int numMinutes = seconds >= 60 ? seconds / 60 : 0;
             seconds = seconds - (numMinutes * 60);
 
             int numSeconds = seconds;
-            
-            return string.Concat((numHours > 10?numHours.ToString():string.Concat("0",numHours.ToString())) , ":" ,
-                    (numMinutes > 10 ? numMinutes.ToString() : string.Concat("0", numMinutes.ToString())) , ":" ,
+
+            return string.Concat((numHours > 10 ? numHours.ToString() : string.Concat("0", numHours.ToString())), ":",
+                    (numMinutes > 10 ? numMinutes.ToString() : string.Concat("0", numMinutes.ToString())), ":",
                     (numSeconds > 10 ? numSeconds.ToString() : string.Concat("0", numSeconds.ToString())));
         }
 
 
-            public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
-            {
-                return YourPoints > (ClassPoints.Sum() / ClassPoints.Count());
-            }
+        public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
+        {
+            return YourPoints > ClassPoints.Average();
+        }
 
     }
 }
